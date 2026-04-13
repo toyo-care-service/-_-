@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>送料ルール 運用マニュアル</title>
-    <!-- React, ReactDOM, Babel (JSX用), Tailwind CSS を読み込み -->
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -193,15 +192,15 @@
                     a: "原則NGです。ただし、やむを得ない場合は上司に相談の上、対応してください。"
                 },
                 {
-                    q: "メーカー送料20%上乗せ後の端数は、1円単位まで請求するのか、100円単位で切り上げるのか？",
-                    a: "端数は100円単位切り上げを推奨しています。（例：550円→600円）"
+                    q: "メーカー送料20%上乗せ後の端数は、1円単位まで請求するのか、10円単位で切り上げるのか？",
+                    a: "端数は10円単位切り上げを推奨しています。（例：550円→600円）"
                 },
                 {
                     q: "デモ機で送料を徴収した後、そのまま購入に至った場合、購入時の送料1,000円は二重で取ることになるのか？",
                     a: "はい、両方請求します。デモ機の送料と販売の送料は別計上されるので、別々で請求となります。販売時の売上にまとめてデモ機送料を請求することは原則NGとし、デモ機送料はその都度請求してください。"
                 },
                 {
-                    q: "定価の1割引き後の100円単位切り上げをすると、実質的に値引き幅がかなり小さくなるが、柔軟に対応してよいか？",
+                    q: "定価の1割引き後の10円単位切り上げをすると、実質的に値引き幅がかなり小さくなるが、柔軟に対応してよいか？",
                     a: "原則NGです。理由は、端数を切り捨てで値引きしてしまうと1割以上の値引きとなってしまうからです。あくまで定価販売を推奨、値引きは1割までということを抑えてください。1割以上の値引きをしたい場合は、上司に相談の上、対応してください。"
                 },
                 {
@@ -331,7 +330,7 @@
                                                     <div className="text-4xl font-black text-orange-900 leading-none tracking-tight font-sans">
                                                         仕入原価 ÷ 0.8
                                                     </div>
-                                                    <p className="text-sm text-orange-700 mt-4 italic font-bold">※端数は100円単位切り上げ推奨</p>
+                                                    <p className="text-sm text-orange-700 mt-4 italic font-bold">※端数は10円単位切り上げ推奨</p>
                                                 </div>
                                                 <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 text-slate-800 text-sm">
                                                     <p className="text-xs text-slate-500 font-bold mb-3 uppercase tracking-widest">注意事項</p>
@@ -388,7 +387,7 @@
                                             </div>
                                             <div className="flex items-start gap-3 text-base bg-slate-50 p-3 rounded-lg border border-slate-100 shadow-sm">
                                                 <Icon name="CheckCircle" className="w-5 h-5 text-green-500 mt-0.5 shrink-0" />
-                                                <span className="font-sans">端数処理：<span className="font-bold text-red-600">値引き時のみ</span> 100円単位切り上げ</span>
+                                                <span className="font-sans">端数処理：<span className="font-bold text-red-600">値引き時のみ</span> 10円単位切り上げ</span>
                                             </div>
                                             
                                             <div className="bg-purple-50/50 p-5 rounded-xl border border-purple-100 mt-2">
@@ -406,7 +405,7 @@
                                                     <Icon name="ArrowRight" className="w-4 h-4 text-purple-200 shrink-0" />
                                                     <div className="flex-1 bg-purple-100 p-3 rounded-lg border border-purple-200 text-center shadow-sm flex flex-col justify-center min-h-[80px]">
                                                         <span className="block text-[10px] text-purple-500 font-black mb-1 leading-none uppercase">販売価格<br/>（税抜）</span>
-                                                        <span className="text-sm md:text-base font-black text-purple-800 underline decoration-purple-300 decoration-2 font-sans tracking-tight">32,300円</span>
+                                                        <span className="text-sm md:text-base font-black text-purple-800 underline decoration-purple-300 decoration-2 font-sans tracking-tight">32,220円</span>
                                                     </div>
                                                 </div>
                                             </div>
